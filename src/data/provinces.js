@@ -1,5 +1,37 @@
 import AnGiangImg from "../assets/provinces/angiang.png";
 import DongThapImg from "../assets/provinces/dongthap.png";
+import CanThoImg from "../assets/provinces/cantho.png";
+import CaMauImg from "../assets/provinces/camau.png";
+import VinhLongImg from "../assets/provinces/vinhlong.png";
+import TayNinhImg from "../assets/provinces/tayninh.png";
+import DongNaiImg from "../assets/provinces/dongnai.png";
+import tpHCMImg from "../assets/provinces/tphcm.png";
+import LamDongImg from "../assets/provinces/lamdong.png";
+import DakLakImg from "../assets/provinces/daklak.png";
+import GiaLaiImg from "../assets/provinces/gialai.png";
+import QuangNgaiImg from "../assets/provinces/quangngai.png";
+import KhanhHoaImg from "../assets/provinces/khanhhoa.png";
+import DaNangImg from "../assets/provinces/danang.png";
+import HueImg from "../assets/provinces/hue.png";
+import QuangTriImg from "../assets/provinces/quangtri.png";
+import HaTinhImg from "../assets/provinces/hatinh.png";
+import NgheAnImg from "../assets/provinces/nghean.png";
+import ThanhHoaImg from "../assets/provinces/thanhhoa.png";
+import NinhBinhImg from "../assets/provinces/ninhbinh.png";
+import HaNoiImg from "../assets/provinces/hanoi.png";
+import HaiPhongImg from "../assets/provinces/haiphong.png";
+import QuangNinhImg from "../assets/provinces/quangninh.png";
+import BacNinhImg from "../assets/provinces/bacninh.png";
+import HungYenImg from "../assets/provinces/hungyen.png";
+import PhuThoImg from "../assets/provinces/phutho.png";
+import LaoCaiImg from "../assets/provinces/laocai.png";
+import TuyenQuangImg from "../assets/provinces/tuyenquang.png";
+import CaoBangImg from "../assets/provinces/caobang.png";
+import LangSonImg from "../assets/provinces/langson.png";
+import ThaiNguyenImg from "../assets/provinces/thainguyen.png";
+import LaiChauImg from "../assets/provinces/laichau.png";
+import SonLaImg from "../assets/provinces/sonla.png";
+import DienBienImg from "../assets/provinces/dienbien.png";
 
 const PROVINCES_DATA = [
   {
@@ -15,7 +47,7 @@ const PROVINCES_DATA = [
   {
     id: "ca-mau",
     name: "Cà Mau",
-    thumbnail: AnGiangImgImg,
+    thumbnail: CaMauImg,
     dice: [
       { number: 1, id: "an-giang" },
       { number: 2, id: "can-tho" },
@@ -24,7 +56,7 @@ const PROVINCES_DATA = [
   {
     id: "can-tho",
     name: "Cần Thơ",
-    thumbnail: AnGiangImg,
+    thumbnail: CanThoImg,
     dice: [
       { number: 1, id: "an-giang" },
       { number: 2, id: "dong-thap" },
@@ -35,7 +67,7 @@ const PROVINCES_DATA = [
   {
     id: "vinh-long",
     name: "Vĩnh Long",
-    thumbnail: AnGiangImg,
+    thumbnail: VinhLongImg,
     dice: [
       { number: 1, id: "can-tho" },
       { number: 2, id: "dong-thap" },
@@ -44,7 +76,7 @@ const PROVINCES_DATA = [
   {
     id: "dong-thap",
     name: "Đồng Tháp",
-    thumbnail: AnGiangImg,
+    thumbnail: DongThapImg,
     dice: [
       { number: 1, id: "an-giang" },
       { number: 2, id: "can-tho" },
@@ -55,7 +87,7 @@ const PROVINCES_DATA = [
   {
     id: "tay-ninh",
     name: "Tây Ninh",
-    thumbnail: AnGiangImg,
+    thumbnail: TayNinhImg,
     dice: [
       { number: 1, id: "dong-thap" },
       { number: 2, id: "dong-nai" },
@@ -65,7 +97,7 @@ const PROVINCES_DATA = [
   {
     id: "dong-nai",
     name: "Đồng Nai",
-    thumbnail: AnGiangImg,
+    thumbnail: DongNaiImg,
     dice: [
       { number: 1, id: "tay-ninh" },
       { number: 2, id: "tp-HCM" },
@@ -75,7 +107,7 @@ const PROVINCES_DATA = [
   {
     id: "tp-HCM",
     name: "TP. Hồ Chí Minh",
-    thumbnail: AnGiangImg,
+    thumbnail: tpHCMImg,
     dice: [
       { number: 1, id: "lam-dong" },
       { number: 3, id: "tay-ninh" },
@@ -87,7 +119,7 @@ const PROVINCES_DATA = [
   {
     id: "lam-dong",
     name: "Lâm Đồng",
-    thumbnail: AnGiangImg,
+    thumbnail: LamDongImg,
     dice: [
       { number: 1, id: "dong-nai" },
       { number: 2, id: "dak-lak" },
@@ -98,7 +130,7 @@ const PROVINCES_DATA = [
   {
     id: "dak-lak",
     name: "Đắk Lắk",
-    thumbnail: AnGiangImg,
+    thumbnail: DakLakImg,
     dice: [
       { number: 1, id: "lam-dong" },
       { number: 3, id: "gia-lai" },
@@ -108,7 +140,7 @@ const PROVINCES_DATA = [
   {
     id: "gia-lai",
     name: "Gia Lai",
-    thumbnail: AnGiangImg,
+    thumbnail: GiaLaiImg,
     dice: [
       { number: 1, id: "dak-lak" },
       { number: 2, id: "gia-lai" },
@@ -117,7 +149,7 @@ const PROVINCES_DATA = [
   {
     id: "quang-ngai",
     name: "Quảng Ngãi",
-    thumbnail: AnGiangImg,
+    thumbnail: QuangNgaiImg,
     dice: [
       { number: 1, id: "gia-lai" },
       { number: 2, id: "da-nang" },
@@ -126,7 +158,7 @@ const PROVINCES_DATA = [
   {
     id: "khanh-hoa",
     name: "Khánh Hòa",
-    thumbnail: AnGiangImg,
+    thumbnail: KhanhHoaImg,
     dice: [
       { number: 1, id: "lam-dong" },
       { number: 2, id: "dak-lak" },
@@ -135,7 +167,7 @@ const PROVINCES_DATA = [
   {
     id: "da-nang",
     name: "Đà Nẵng",
-    thumbnail: AnGiangImg,
+    thumbnail: DaNangImg,
     dice: [
       { number: 1, id: "quang-ngai" },
       { number: 2, id: "tp-hue" },
@@ -144,7 +176,7 @@ const PROVINCES_DATA = [
   {
     id: "tp-hue",
     name: "TP. Huế",
-    thumbnail: AnGiangImg,
+    thumbnail: HueImg,
     dice: [
       { number: 1, id: "da-nang" },
       { number: 2, id: "quang-tri" },
@@ -153,7 +185,7 @@ const PROVINCES_DATA = [
   {
     id: "quang-tri",
     name: "Quảng Trị",
-    thumbnail: AnGiangImg,
+    thumbnail: QuangTriImg,
     dice: [
       { number: 1, id: "tp-hue" },
       { number: 2, id: "quang-tri" },
@@ -162,7 +194,7 @@ const PROVINCES_DATA = [
   {
     id: "ha-tinh",
     name: "Hà Tĩnh",
-    thumbnail: AnGiangImg,
+    thumbnail: HaTinhImg,
     dice: [
       { number: 1, id: "quang-tri" },
       { number: 2, id: "nghe-an" },
@@ -173,7 +205,7 @@ const PROVINCES_DATA = [
   {
     id: "nghe-an",
     name: "Nghệ An",
-    thumbnail: AnGiangImg,
+    thumbnail: NgheAnImg,
     dice: [
       { number: 1, id: "ha-tinh" },
       { number: 2, id: "thanh-hoa" },
@@ -182,7 +214,7 @@ const PROVINCES_DATA = [
   {
     id: "thanh-hoa",
     name: "Thanh Hóa",
-    thumbnail: AnGiangImg,
+    thumbnail: ThanhHoaImg,
     dice: [
       { number: 1, id: "nghe-an" },
       { number: 2, id: "ninh-binh" },
@@ -193,7 +225,7 @@ const PROVINCES_DATA = [
   {
     id: "ninh-binh",
     name: "Ninh Bình",
-    thumbnail: AnGiangImg,
+    thumbnail: NinhBinhImg,
     dice: [
       { number: 1, id: "thanh-hoa" },
       { number: 2, id: "ha-noi" },
@@ -206,7 +238,7 @@ const PROVINCES_DATA = [
   {
     id: "ha-noi",
     name: "Hà Nội",
-    thumbnail: AnGiangImg,
+    thumbnail: HaNoiImg,
     dice: [
       { number: 1, id: "ninh-binh" },
       { number: 2, id: "hung-yen" },
@@ -218,7 +250,7 @@ const PROVINCES_DATA = [
   {
     id: "hai-phong",
     name: "Hải Phòng",
-    thumbnail: AnGiangImg,
+    thumbnail: HaiPhongImg,
     dice: [
       { number: 1, id: "hung-yen" },
       { number: 2, id: "bac-ninh" },
@@ -228,7 +260,7 @@ const PROVINCES_DATA = [
   {
     id: "quang-ninh",
     name: "Quảng Ninh",
-    thumbnail: AnGiangImg,
+    thumbnail: QuangNinhImg,
     dice: [
       { number: 1, id: "hai-phong" },
       { number: 2, id: "lang-son" },
@@ -238,7 +270,7 @@ const PROVINCES_DATA = [
   {
     id: "bac-ninh",
     name: "Bắc Ninh",
-    thumbnail: AnGiangImg,
+    thumbnail: BacNinhImg,
     dice: [
       { number: 1, id: "ha-noi" },
       { number: 2, id: "lang-son" },
@@ -251,7 +283,7 @@ const PROVINCES_DATA = [
   {
     id: "hung-yen",
     name: "Hưng Yên",
-    thumbnail: AnGiangImg,
+    thumbnail: HungYenImg,
     dice: [
       { number: 1, id: "hai-phong" },
       { number: 2, id: "ha-noi" },
@@ -262,7 +294,7 @@ const PROVINCES_DATA = [
   {
     id: "phu-tho",
     name: "Phú Thọ",
-    thumbnail: AnGiangImg,
+    thumbnail: PhuThoImg,
     dice: [
       { number: 1, id: "thai-nguyen" },
       { number: 2, id: "lao-cai" },
@@ -275,7 +307,7 @@ const PROVINCES_DATA = [
   {
     id: "lao-cai",
     name: "Lào Cai",
-    thumbnail: AnGiangImg,
+    thumbnail: LaoCaiImg,
     dice: [
       { number: 1, id: "phu-tho" },
       { number: 2, id: "tuyen-quang" },
@@ -286,7 +318,7 @@ const PROVINCES_DATA = [
   {
     id: "tuyen-quang",
     name: "Tuyên Quang",
-    thumbnail: AnGiangImg,
+    thumbnail: TuyenQuangImg,
     dice: [
       { number: 1, id: "phu-tho" },
       { number: 2, id: "cao-bang" },
@@ -297,7 +329,7 @@ const PROVINCES_DATA = [
   {
     id: "cao-bang",
     name: "Cao Bằng",
-    thumbnail: AnGiangImg,
+    thumbnail: CaoBangImg,
     dice: [
       { number: 1, id: "tuyen-quang" },
       { number: 2, id: "lang-son" },
@@ -307,7 +339,7 @@ const PROVINCES_DATA = [
   {
     id: "lang-son",
     name: "Lạng Sơn",
-    thumbnail: AnGiangImg,
+    thumbnail: LangSonImg,
     dice: [
       { number: 1, id: "cao-bang" },
       { number: 2, id: "bac-ninh" },
@@ -318,7 +350,7 @@ const PROVINCES_DATA = [
   {
     id: "thai-nguyen",
     name: "Thái Nguyên",
-    thumbnail: AnGiangImg,
+    thumbnail: ThaiNguyenImg,
     dice: [
       { number: 1, id: "phu-tho" },
       { number: 2, id: "bac-ninh" },
@@ -331,7 +363,7 @@ const PROVINCES_DATA = [
   {
     id: "lai-chau",
     name: "Lai Châu",
-    thumbnail: AnGiangImg,
+    thumbnail: LaiChauImg,
     dice: [
       { number: 1, id: "son-la" },
       { number: 2, id: "dien-bien" },
@@ -341,7 +373,7 @@ const PROVINCES_DATA = [
   {
     id: "son-la",
     name: "Sơn La",
-    thumbnail: AnGiangImg,
+    thumbnail: SonLaImg,
     dice: [
       { number: 1, id: "thanh-hoa" },
       { number: 2, id: "phu-tho" },
@@ -353,7 +385,7 @@ const PROVINCES_DATA = [
   {
     id: "dien-bien",
     name: "Điện Biên",
-    thumbnail: AnGiangImg,
+    thumbnail: DienBienImg,
     dice: [
       { number: 1, id: "son-la" },
       { number: 2, id: "lai-chau" },
