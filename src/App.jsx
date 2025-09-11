@@ -53,9 +53,9 @@ function App() {
         <img src={VietnamMap} className="map" />
       </div>
       <div className="game-container">
-        <div>Người chơi: {turn}</div>
+        <ProvinceBox turn={turn} player={player1} active={turn === 1} />
         <Dice onRollDice={onRollDice} />
-        <ProvinceBox />
+        <ProvinceBox turn={turn} player={player2} active={turn === 2} />
       </div>
     </div>
   );

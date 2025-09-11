@@ -1,18 +1,28 @@
-import AnGiangImg from "../../assets/provinces/angiang.png";
+import PROVINCES_DATA from "../../data/provinces";
 import "./style.css";
-const ProvinceBox = () => {
+const ProvinceBox = ({ turn, player, active }) => {
+  const currentProvinceData = PROVINCES_DATA.find((item) => item.id === player);
+  let provinceBoxClassName = "province-box";
+  if (active === true) {
+    provinceBoxClassName = provinceBoxClassName + " province-box__active";
+  }
   return (
-    <div className="province-box">
+    <div className={provinceBoxClassName}>
       <div className="content">
-        <h3>An Giang</h3>
+        <h3>{currentProvinceData.name}</h3>
         <div>
-            <p>2. Đồng Tháp</p>
-            <p>4. Cần Thơ</p>
-            <p>6. Vĩnh Long</p>
+          {currentProvinceData.dice.map((item) => {
+            const province = PROVINCES_DATA.find((i) => i.id === item.id);
+            return (
+              <p>
+                {item.number}. {province.name}
+              </p>
+            );
+          })}
         </div>
       </div>
       <div className="thumbnail">
-        <img src={AnGiangImg} />
+        <img src={currentProvinceData.thumbnail} />
       </div>
     </div>
   );
