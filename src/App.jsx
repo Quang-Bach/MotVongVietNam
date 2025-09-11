@@ -9,7 +9,8 @@ function App() {
   const [turn, setTurn] = useState(1); // state lưu trữ lượt chơi hiện tại, bắt đầu từ người chơi 1
   const [player1, setPlayer1] = useState("ca-mau"); // state lưu trữ vị trí hiện tại của người chơi 1, bắt đầu ở Cà Mau
   const [player2, setPlayer2] = useState("ca-mau"); // state lưu trữ vị trí hiện tại của người chơi 2, bắt đầu ở Cà Mau
-
+  const [dice, setDice] = useState(1); //State lưu trữ kết quả của lần lắc xí ngầu gần nhâyts
+  // state lưu trữ kết quả của lần gieo xúc xắc gần nhất, bắt đầu từ 1
   const onRollDice = () => {
     const diceResult = Math.floor(Math.random() * 6) + 1; // Công thức tính ngẫu nhiên số từ 1 tới 6
     console.log(diceResult);
@@ -45,7 +46,8 @@ function App() {
       // Ngược lại, nếu lượt chơi hiện tại là người chơi 2
       setTurn(1); // Chuyển lượt chơi sang người chơi 1
     }
-    return diceResult;
+    //B4: Cập nhật kết quả của lần lắc xí ngầu gần nhất
+    setDice(diceResult);
   };
   return (
     <div className="app-container">
@@ -54,7 +56,7 @@ function App() {
       </div>
       <div className="game-container">
         <ProvinceBox turn={turn} player={player1} active={turn === 1} />
-        <Dice onRollDice={onRollDice} />
+        <Dice dice={dice} onRollDice={onRollDice} />
         <ProvinceBox turn={turn} player={player2} active={turn === 2} />
       </div>
     </div>
