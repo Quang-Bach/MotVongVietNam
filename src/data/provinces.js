@@ -392,3 +392,4 @@ const PROVINCES_DATA = [
     ],
   },
 ];
+export default PROVINCES_DATA;
