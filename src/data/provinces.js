@@ -52,6 +52,10 @@ const PROVINCES_DATA = [
       { number: 1, id: "an-giang" },
       { number: 2, id: "can-tho" },
     ],
+    position: {
+      x: 192,
+      y: 795,
+    },
   },
   {
     id: "can-tho",

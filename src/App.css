@@ -5,6 +5,7 @@
 }
 body {
   color: black;
+  background-color: #ffff;
 }
 
 .app-container {
@@ -12,9 +13,9 @@ body {
   height: 100vh;
   display: flex;
 }
-.map {
-  width: auto;
-  height: 100vh;
+.map-container {
+  display: flex;
+  align-self: center;
 }
 .game-container {
   flex-grow: 1;
@@ -23,5 +24,4 @@ body {
   justify-content: center;
   align-items: center;
   gap: 80px;
-  background-color: #ffff;
 }

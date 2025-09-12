@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import VietnamMap from "./assets/bando.png";
+import VietNamMap from "./components/VietNamMap";
 import ProvinceBox from "./components/ProvinceBox";
 import Dice from "./components/Dice";
 import PROVINCES_DATA from "./data/provinces";
@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="app-container">
       <div className="map-container">
-        <img src={VietnamMap} className="map" />
+        <VietNamMap />
       </div>
       <div className="game-container">
         <ProvinceBox turn={turn} player={player1} active={turn === 1} />
