@@ -44,8 +44,8 @@ const PROVINCES_DATA = [
       { number: 3, id: "ca-mau" },
     ],
     position: {
-      x: 177,
-      y: 748,
+      x: 180,
+      y: 750,
     },
   },
   {

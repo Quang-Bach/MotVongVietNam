@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="app-container">
       <div className="map-container">
-        <VietNamMap />
+        <VietNamMap player1={player1} player2={player2} />
       </div>
       <div className="game-container">
         <ProvinceBox turn={turn} player={player1} active={turn === 1} />
