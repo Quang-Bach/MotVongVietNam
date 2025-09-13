@@ -43,6 +43,10 @@ const PROVINCES_DATA = [
       { number: 2, id: "can-tho" },
       { number: 3, id: "ca-mau" },
     ],
+    position: {
+      x: 177,
+      y: 748,
+    },
   },
   {
     id: "ca-mau",
@@ -67,6 +71,10 @@ const PROVINCES_DATA = [
       { number: 3, id: "vinh-long" },
       { number: 4, id: "ca-mau" },
     ],
+    position: {
+      x: 215,
+      y: 774,
+    },
   },
   {
     id: "vinh-long",
@@ -76,6 +84,10 @@ const PROVINCES_DATA = [
       { number: 1, id: "can-tho" },
       { number: 2, id: "dong-thap" },
     ],
+    position: {
+      x: 240,
+      y: 759,
+    },
   },
   {
     id: "dong-thap",
@@ -87,6 +99,10 @@ const PROVINCES_DATA = [
       { number: 3, id: "vinh-long" },
       { number: 4, id: "tay-ninh" },
     ],
+    position: {
+      x: 255,
+      y: 735,
+    },
   },
   {
     id: "tay-ninh",
@@ -97,6 +113,10 @@ const PROVINCES_DATA = [
       { number: 2, id: "dong-nai" },
       { number: 3, id: "tp-HCM" },
     ],
+    position: {
+      x: 237,
+      y: 694,
+    },
   },
   {
     id: "dong-nai",
@@ -107,6 +127,10 @@ const PROVINCES_DATA = [
       { number: 2, id: "tp-HCM" },
       { number: 3, id: "lam-dong" },
     ],
+    position: {
+      x: 285,
+      y: 684,
+    },
   },
   {
     id: "tp-HCM",
@@ -117,6 +141,10 @@ const PROVINCES_DATA = [
       { number: 3, id: "tay-ninh" },
       { number: 4, id: "dong-nai" },
     ],
+    position: {
+      x: 268,
+      y: 720,
+    },
   },
 
   // ==== Tây Nguyên & Duyên hải Nam Trung Bộ ====
@@ -130,6 +158,10 @@ const PROVINCES_DATA = [
       { number: 3, id: "khanh-hoa" },
       { number: 4, id: "tp-HCM" },
     ],
+    position: {
+      x: 333,
+      y: 670,
+    },
   },
   {
     id: "dak-lak",
@@ -140,6 +172,10 @@ const PROVINCES_DATA = [
       { number: 3, id: "gia-lai" },
       { number: 6, id: "khanh-hoa" },
     ],
+    position: {
+      x: 354,
+      y: 614,
+    },
   },
   {
     id: "gia-lai",
@@ -149,6 +185,10 @@ const PROVINCES_DATA = [
       { number: 1, id: "dak-lak" },
       { number: 2, id: "gia-lai" },
     ],
+    position: {
+      x: 358,
+      y: 552,
+    },
   },
   {
     id: "quang-ngai",
@@ -158,6 +198,10 @@ const PROVINCES_DATA = [
       { number: 1, id: "gia-lai" },
       { number: 2, id: "da-nang" },
     ],
+    position: {
+      x: 346,
+      y: 506,
+    },
   },
   {
     id: "khanh-hoa",
@@ -167,6 +211,10 @@ const PROVINCES_DATA = [
       { number: 1, id: "lam-dong" },
       { number: 2, id: "dak-lak" },
     ],
+    position: {
+      x: 382,
+      y: 655,
+    },
   },
   {
     id: "da-nang",
@@ -176,6 +224,10 @@ const PROVINCES_DATA = [
       { number: 1, id: "quang-ngai" },
       { number: 2, id: "tp-hue" },
     ],
+    position: {
+      x: 331,
+      y: 458,
+    },
   },
   {
     id: "tp-hue",
@@ -185,6 +237,10 @@ const PROVINCES_DATA = [
       { number: 1, id: "da-nang" },
       { number: 2, id: "quang-tri" },
     ],
+    position: {
+      x: 306,
+      y: 421,
+    },
   },
   {
     id: "quang-tri",
@@ -194,6 +250,10 @@ const PROVINCES_DATA = [
       { number: 1, id: "tp-hue" },
       { number: 2, id: "quang-tri" },
     ],
+    position: {
+      x: 262,
+      y: 378,
+    },
   },
   {
     id: "ha-tinh",
@@ -203,6 +263,10 @@ const PROVINCES_DATA = [
       { number: 1, id: "quang-tri" },
       { number: 2, id: "nghe-an" },
     ],
+    position: {
+      x: 212,
+      y: 313,
+    },
   },
 
   // ==== Bắc Trung Bộ ====
@@ -214,6 +278,10 @@ const PROVINCES_DATA = [
       { number: 1, id: "ha-tinh" },
       { number: 2, id: "thanh-hoa" },
     ],
+    position: {
+      x: 174,
+      y: 260,
+    },
   },
   {
     id: "thanh-hoa",
@@ -225,6 +293,10 @@ const PROVINCES_DATA = [
       { number: 3, id: "phu-tho" },
       { number: 4, id: "son-la" },
     ],
+    position: {
+      x: 200,
+      y: 221,
+    },
   },
   {
     id: "ninh-binh",
@@ -236,6 +308,10 @@ const PROVINCES_DATA = [
       { number: 3, id: "phu-tho" },
       { number: 4, id: "hung-yen" },
     ],
+    position: {
+      x: 231,
+      y: 204,
+    },
   },
 
   // ==== Đồng bằng sông Hồng & Trung du miền núi phía Bắc ====
@@ -250,6 +326,10 @@ const PROVINCES_DATA = [
       { number: 4, id: "thai-nguyen" },
       { number: 5, id: "phu-tho" },
     ],
+    position: {
+      x: 214,
+      y: 166,
+    },
   },
   {
     id: "hai-phong",
@@ -260,6 +340,10 @@ const PROVINCES_DATA = [
       { number: 2, id: "bac-ninh" },
       { number: 3, id: "quang-ninh" },
     ],
+    position: {
+      x: 252,
+      y: 172,
+    },
   },
   {
     id: "quang-ninh",
@@ -270,6 +354,10 @@ const PROVINCES_DATA = [
       { number: 2, id: "lang-son" },
       { number: 3, id: "bac-ninh" },
     ],
+    position: {
+      x: 293,
+      y: 156,
+    },
   },
   {
     id: "bac-ninh",
@@ -283,6 +371,10 @@ const PROVINCES_DATA = [
       { number: 5, id: "hai-phong" },
       { number: 6, id: "thai-nguyen" },
     ],
+    position: {
+      x: 248,
+      y: 146,
+    },
   },
   {
     id: "hung-yen",
@@ -294,6 +386,10 @@ const PROVINCES_DATA = [
       { number: 3, id: "ninh-binh" },
       { number: 4, id: "bac-ninh" },
     ],
+    position: {
+      x: 249,
+      y: 189,
+    },
   },
   {
     id: "phu-tho",
@@ -307,6 +403,10 @@ const PROVINCES_DATA = [
       { number: 5, id: "son-la" },
       { number: 6, id: "ninh-binh" },
     ],
+    position: {
+      x: 188,
+      y: 170,
+    },
   },
   {
     id: "lao-cai",
@@ -318,6 +418,10 @@ const PROVINCES_DATA = [
       { number: 3, id: "son-la" },
       { number: 4, id: "lai-chau" },
     ],
+    position: {
+      x: 144,
+      y: 109,
+    },
   },
   {
     id: "tuyen-quang",
@@ -329,6 +433,10 @@ const PROVINCES_DATA = [
       { number: 3, id: "thai-nguyen" },
       { number: 4, id: "lao-cai" },
     ],
+    position: {
+      x: 182,
+      y: 82,
+    },
   },
   {
     id: "cao-bang",
@@ -339,6 +447,10 @@ const PROVINCES_DATA = [
       { number: 2, id: "lang-son" },
       { number: 3, id: "thai-nguyen" },
     ],
+    position: {
+      x: 234,
+      y: 68,
+    },
   },
   {
     id: "lang-son",
@@ -350,6 +462,10 @@ const PROVINCES_DATA = [
       { number: 3, id: "thai-nguyen" },
       { number: 4, id: "quang-ninh" },
     ],
+    position: {
+      x: 258,
+      y: 120,
+    },
   },
   {
     id: "thai-nguyen",
@@ -363,6 +479,10 @@ const PROVINCES_DATA = [
       { number: 5, id: "ha-noi" },
       { number: 6, id: "tuyen-quang" },
     ],
+    position: {
+      x: 220,
+      y: 108,
+    },
   },
   {
     id: "lai-chau",
@@ -373,6 +493,10 @@ const PROVINCES_DATA = [
       { number: 2, id: "dien-bien" },
       { number: 3, id: "lao-cai" },
     ],
+    position: {
+      x: 84,
+      y: 89,
+    },
   },
   {
     id: "son-la",
@@ -385,6 +509,10 @@ const PROVINCES_DATA = [
       { number: 4, id: "dien-bien" },
       { number: 5, id: "lao-cai" },
     ],
+    position: {
+      x: 123,
+      y: 149,
+    },
   },
   {
     id: "dien-bien",
@@ -394,6 +522,10 @@ const PROVINCES_DATA = [
       { number: 1, id: "son-la" },
       { number: 2, id: "lai-chau" },
     ],
+    position: {
+      x: 85,
+      y: 123,
+    },
   },
 ];
 export default PROVINCES_DATA;
