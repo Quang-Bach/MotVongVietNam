@@ -33,6 +33,7 @@ import LaiChauImg from "../assets/provinces/laichau.png";
 import SonLaImg from "../assets/provinces/sonla.png";
 import DienBienImg from "../assets/provinces/dienbien.png";
 import HoangSaImg from "../assets/provinces/hoangsa.png";
+import TruongSaImg from "../assets/provinces/truongsa.png";
 
 const PROVINCES_DATA = [
   {
@@ -43,6 +44,7 @@ const PROVINCES_DATA = [
       { number: 1, id: "dong-thap" },
       { number: 2, id: "can-tho" },
       { number: 3, id: "ca-mau" },
+      { number: 4, id: "tay-ninh" },
     ],
     position: {
       x: 180,
@@ -57,6 +59,7 @@ const PROVINCES_DATA = [
       { number: 1, id: "an-giang" },
       { number: 2, id: "can-tho" },
       { number: 3, id: "dong-thap" },
+      { number: 4, id: "truong-sa" },
     ],
     position: {
       x: 192,
@@ -72,6 +75,7 @@ const PROVINCES_DATA = [
       { number: 2, id: "dong-thap" },
       { number: 3, id: "vinh-long" },
       { number: 4, id: "ca-mau" },
+      { number: 5, id: "truong-sa" },
     ],
     position: {
       x: 215,
@@ -85,6 +89,8 @@ const PROVINCES_DATA = [
     dice: [
       { number: 1, id: "can-tho" },
       { number: 2, id: "dong-thap" },
+      { number: 3, id: "tay-ninh" },
+      { number: 4, id: "tp-HCM" },
     ],
     position: {
       x: 240,
@@ -100,6 +106,7 @@ const PROVINCES_DATA = [
       { number: 2, id: "can-tho" },
       { number: 3, id: "vinh-long" },
       { number: 4, id: "tay-ninh" },
+      { number: 5, id: "tp-HCM" },
     ],
     position: {
       x: 255,
@@ -114,6 +121,7 @@ const PROVINCES_DATA = [
       { number: 1, id: "dong-thap" },
       { number: 2, id: "dong-nai" },
       { number: 3, id: "tp-HCM" },
+      { number: 4, id: "lam-dong" },
     ],
     position: {
       x: 237,
@@ -128,6 +136,7 @@ const PROVINCES_DATA = [
       { number: 1, id: "tay-ninh" },
       { number: 2, id: "tp-HCM" },
       { number: 3, id: "lam-dong" },
+      { number: 4, id: "dak-lak" },
     ],
     position: {
       x: 285,
@@ -140,8 +149,9 @@ const PROVINCES_DATA = [
     thumbnail: tpHCMImg,
     dice: [
       { number: 1, id: "lam-dong" },
-      { number: 3, id: "tay-ninh" },
-      { number: 4, id: "dong-nai" },
+      { number: 2, id: "tay-ninh" },
+      { number: 3, id: "dong-nai" },
+      { number: 4, id: "da-nang" },
     ],
     position: {
       x: 268,
@@ -171,8 +181,9 @@ const PROVINCES_DATA = [
     thumbnail: DakLakImg,
     dice: [
       { number: 1, id: "lam-dong" },
-      { number: 3, id: "gia-lai" },
-      { number: 6, id: "khanh-hoa" },
+      { number: 2, id: "gia-lai" },
+      { number: 3, id: "khanh-hoa" },
+      { number: 4, id: "quang-ngai" },
     ],
     position: {
       x: 354,
@@ -187,6 +198,7 @@ const PROVINCES_DATA = [
       { number: 1, id: "dak-lak" },
       { number: 2, id: "quang-ngai" },
       { number: 3, id: "da-nang" },
+      { number: 4, id: "tp-hue" },
     ],
     position: {
       x: 358,
@@ -202,6 +214,7 @@ const PROVINCES_DATA = [
       { number: 2, id: "da-nang" },
       { number: 3, id: "tp-hue" },
       { number: 4, id: "hoang-sa" },
+      { number: 5, id: "tp-hue" },
     ],
     position: {
       x: 346,
@@ -215,6 +228,8 @@ const PROVINCES_DATA = [
     dice: [
       { number: 1, id: "lam-dong" },
       { number: 2, id: "dak-lak" },
+      { number: 3, id: "truong-sa" },
+      { number: 4, id: "gia-lai" },
     ],
     position: {
       x: 382,
@@ -229,6 +244,7 @@ const PROVINCES_DATA = [
       { number: 1, id: "quang-ngai" },
       { number: 2, id: "tp-hue" },
       { number: 3, id: "hoang-sa" },
+      { number: 4, id: "quang-tri" },
     ],
     position: {
       x: 331,
@@ -242,6 +258,8 @@ const PROVINCES_DATA = [
     dice: [
       { number: 1, id: "da-nang" },
       { number: 2, id: "quang-tri" },
+      { number: 3, id: "hoang-sa" },
+      { number: 4, id: "ha-tinh" },
     ],
     position: {
       x: 306,
@@ -255,6 +273,8 @@ const PROVINCES_DATA = [
     dice: [
       { number: 1, id: "tp-hue" },
       { number: 2, id: "quang-tri" },
+      { number: 3, id: "hoang-sa" },
+      { number: 4, id: "nghe-an" },
     ],
     position: {
       x: 262,
@@ -540,11 +560,27 @@ const PROVINCES_DATA = [
     thumbnail: HoangSaImg,
     dice: [
       { number: 1, id: "ha-noi" },
-      { number: 2, id: "ca-mau" },
+      { number: 2, id: "truong-sa" },
+      { number: 3, id: "quang-tri" },
     ],
     position: {
       x: 528,
       y: 421,
+    },
+  },
+
+  {
+    id: "truong-sa",
+    name: "Trường Sa",
+    thumbnail: TruongSaImg,
+    dice: [
+      { number: 1, id: "hoang-sa" },
+      { number: 2, id: "ca-mau" },
+      { number: 3, id: "tp-HCM" },
+    ],
+    position: {
+      x: 540,
+      y: 817,
     },
   },
 ];
