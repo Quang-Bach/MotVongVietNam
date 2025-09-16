@@ -1,18 +1,20 @@
 import { useState } from "react";
-import "./App.css";
+
 import VietNamMap from "./components/VietNamMap";
 import ProvinceBox from "./components/ProvinceBox";
 import Dice from "./components/Dice";
 import PROVINCES_DATA from "./data/provinces";
+import Winner from "./components/Winner";
+import "./App.css";
 
 function App() {
   const [turn, setTurn] = useState(1); // state lưu trữ lượt chơi hiện tại, bắt đầu từ người chơi 1
   const [player1, setPlayer1] = useState("ca-mau"); // state lưu trữ vị trí hiện tại của người chơi 1, bắt đầu ở Cà Mau
   const [player2, setPlayer2] = useState("ca-mau"); // state lưu trữ vị trí hiện tại của người chơi 2, bắt đầu ở Cà Mau
-  const [dice, setDice] = useState(1); //State lưu trữ kết quả của lần lắc xí ngầu gần nhâyts
+  const [dice, setDice] = useState(6); //State lưu trữ kết quả của lần lắc xí ngầu gần nhâts, baứt đầu là s6
   // state lưu trữ kết quả của lần gieo xúc xắc gần nhất, bắt đầu từ 1
+  const [winner, setWinner] = useState(undefined); //Stage lưu trữ ng chơi chiến thắng
   const onRollDice = (diceResult) => {
-    console.log(diceResult);
     //B1: tìm ra tỉnh hiện tại người chơi đang đứng
     let currentProvince;
     if (turn === 1) {
@@ -30,6 +32,7 @@ function App() {
       (item) => item.number === diceResult
     );
     console.log("Tỉnh tiếp theo: ", nextProvince);
+
     // B3: Cập nhật vị trí người chơi hiện tại
 
     if (turn === 1) {
@@ -47,7 +50,20 @@ function App() {
     }
     //B4: Cập nhật kết quả của lần lắc xí ngầu gần nhất
     setDice(diceResult);
+    //B5: kiểm tra người chơi hiện tại có thắng không
+
+    if (nextProvince.id === "cuc-bac-viet-nam") {
+      setWinner(turn); // Cập nhật ng chiến thắng
+    }
   };
+  const onNewGame = () => {
+    setTurn(1);
+    setPlayer1("ca-mau");
+    setPlayer2("ca-mau");
+    setWinner(undefined);
+    setDice(6);
+  };
+
   return (
     <div className="app-container">
       <div className="map-container">
@@ -58,6 +74,9 @@ function App() {
         <Dice dice={dice} onRollDice={onRollDice} />
         <ProvinceBox turn={turn} player={player2} active={turn === 2} />
       </div>
+      {winner !== undefined && (
+        <Winner wwinner={winner} onNewGame={onNewGame} />
+      )}
     </div>
   );
 }

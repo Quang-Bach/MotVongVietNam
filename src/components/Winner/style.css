@@ -1,0 +1,43 @@
+.winner-container {
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  z-index: 1000;
+  background-color: rgba(254, 157, 157, 0.5);
+}
+
+.winner-container .winner-confetti {
+  z-index: 999999;
+}
+
+.winner-container .winner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  padding: 24px 32px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInScale 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+.winner-container .winner-content .winner-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}

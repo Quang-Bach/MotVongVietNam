@@ -34,6 +34,7 @@ import SonLaImg from "../assets/provinces/sonla.png";
 import DienBienImg from "../assets/provinces/dienbien.png";
 import HoangSaImg from "../assets/provinces/hoangsa.png";
 import TruongSaImg from "../assets/provinces/truongsa.png";
+import CucBacImg from "../assets/provinces/cucbac.png";
 
 const PROVINCES_DATA = [
   {
@@ -458,6 +459,7 @@ const PROVINCES_DATA = [
       { number: 2, id: "cao-bang" },
       { number: 3, id: "thai-nguyen" },
       { number: 4, id: "lao-cai" },
+      { number: 6, id: "cuc-bac-viet-nam" },
     ],
     position: {
       x: 182,
@@ -581,6 +583,17 @@ const PROVINCES_DATA = [
     position: {
       x: 540,
       y: 817,
+    },
+  },
+  {
+    id: "cuc-bac-viet-nam",
+    name: "Cực Bắc Việt Nam",
+    thumbnail: CucBacImg,
+    dice: [],
+
+    position: {
+      x: 182,
+      y: 82,
     },
   },
 ];
