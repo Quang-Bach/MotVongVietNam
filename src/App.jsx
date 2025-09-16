@@ -11,8 +11,7 @@ function App() {
   const [player2, setPlayer2] = useState("ca-mau"); // state lưu trữ vị trí hiện tại của người chơi 2, bắt đầu ở Cà Mau
   const [dice, setDice] = useState(1); //State lưu trữ kết quả của lần lắc xí ngầu gần nhâyts
   // state lưu trữ kết quả của lần gieo xúc xắc gần nhất, bắt đầu từ 1
-  const onRollDice = () => {
-    const diceResult = Math.floor(Math.random() * 6) + 1; // Công thức tính ngẫu nhiên số từ 1 tới 6
+  const onRollDice = (diceResult) => {
     console.log(diceResult);
     //B1: tìm ra tỉnh hiện tại người chơi đang đứng
     let currentProvince;

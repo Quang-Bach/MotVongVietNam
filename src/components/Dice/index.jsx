@@ -1,11 +1,7 @@
-import DiceImg from "../../assets/dice.png";
+import DiceLib from "react-dice-roll";
+
 const Dice = ({ dice, onRollDice }) => {
-  return (
-    <div onClick={onRollDice}>
-      <img src={DiceImg} width={100} height="auto" />
-      {dice}
-    </div>
-  );
+  return <DiceLib rollingTime={2000} size={100} onRoll={onRollDice} />;
 };
 
 export default Dice;
