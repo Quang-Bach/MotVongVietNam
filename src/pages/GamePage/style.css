@@ -1,0 +1,47 @@
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.map-container {
+  display: flex;
+  align-self: center;
+}
+.game-container {
+  position: relative;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.game-container .replay-button {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #ff7b00, #ffcc00);
+  border: none;
+  border-radius: 50px; /* bo tròn kiểu pill */
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+  transition: all 0.3s ease;
+}
+
+.game-container .replay-button:hover {
+  transform: scale(1.08) rotate(-2deg);
+  background: linear-gradient(135deg, #ff9900, #ffee00);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.game-container .replay-button:active {
+  transform: scale(0.95);
+}

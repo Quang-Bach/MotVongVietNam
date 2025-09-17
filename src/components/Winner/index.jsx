@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Confetti from "react-confetti";
 import "./style.css";
 
@@ -12,7 +13,11 @@ const Winner = ({ winner, onNewGame }) => {
           <p className="winner-text">
             Chúc mừng người chơi {winner} đã chiến thắng!
           </p>
-          <button className="winner-new-game-button" onClick={onNewGame}>Game mới</button>
+          <Link to="/">
+            <button className="winner-new-game-button" onClick={onNewGame}>
+              Game mới
+            </button>
+          </Link>
         </div>
       </div>
     </>
