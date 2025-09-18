@@ -1,12 +1,17 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { faSquareXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSquareXmark,
+  faClockRotateLeft,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import VietNamMap from "../../components/VietNamMap";
 import ProvinceBox from "../../components/ProvinceBox";
 import Dice from "../../components/Dice";
+import HistoryModal from "../../components/HistoryModal";
 import PROVINCES_DATA from "../../data/provinces";
 import Winner from "../../components/Winner";
+
 import "./style.css";
 
 function GamePage() {
@@ -16,6 +21,8 @@ function GamePage() {
   const [dice, setDice] = useState(6); //State lưu trữ kết quả của lần lắc xí ngầu gần nhâts, baứt đầu là s6
   // state lưu trữ kết quả của lần gieo xúc xắc gần nhất, bắt đầu từ 1
   const [winner, setWinner] = useState(undefined); //Stage lưu trữ ng chơi chiến thắng
+  const [openHistory, setOpenHistory] = useState(false); // State lưu giá trị mở modal history
+  const [history, setHistory] = useState([]); // State lưu history
   const onRollDice = (diceResult) => {
     //B1: tìm ra tỉnh hiện tại người chơi đang đứng
     let currentProvince;
@@ -29,6 +36,7 @@ function GamePage() {
       (item) => item.id === currentProvince
     );
     console.log("Tỉnh hiện tại: ", currentProvinceData);
+
     // B2: Tìm xem kết quả của dice có khớp với tỉnh nào trong mảng các tỉnh mà tỉnh hiện tại có thể đi đến không
     const nextProvince = currentProvinceData.dice.find(
       (item) => item.number === diceResult
@@ -57,7 +65,19 @@ function GamePage() {
     if (nextProvince.id === "cuc-bac-viet-nam") {
       setWinner(turn); // Cập nhật ng chiến thắng
     }
+    //B6: ghi lại lịch sử lượt chơi
+    let historyRecord = `Người chơi ${turn}, từ ${currentProvinceData.name}, xoay ${diceResult} nút`;
+    if (nextProvince !== undefined) {
+      const nextProvinceData = PROVINCES_DATA.find(
+        (item) => item.id === nextProvince.id
+      );
+      historyRecord = `${historyRecord}, đến ${nextProvinceData.name}`;
+    } else {
+      historyRecord = `${historyRecord}, không di chuyển`;
+    }
+    setHistory([...history, historyRecord]);
   };
+
   const onNewGame = () => {
     setTurn(1);
     setPlayer1("ca-mau");
@@ -75,13 +95,24 @@ function GamePage() {
         <ProvinceBox turn={turn} player={player1} active={turn === 1} />
         <Dice dice={dice} onRollDice={onRollDice} />
         <ProvinceBox turn={turn} player={player2} active={turn === 2} />
-        <Link to="/" className="replay-button">
+        <button
+          className="action-button action-button__history"
+          onClick={() => setOpenHistory(true)}
+        >
+          <FontAwesomeIcon icon={faClockRotateLeft} />
+        </button>
+        <Link to="/" className="action-button action-button__replay">
           <FontAwesomeIcon icon={faSquareXmark} />
         </Link>
       </div>
       {winner !== undefined && (
         <Winner wwinner={winner} onNewGame={onNewGame} />
       )}
+      <HistoryModal
+        isOpen={openHistory}
+        onClose={() => setOpenHistory(false)}
+        history={history}
+      />
     </div>
   );
 }

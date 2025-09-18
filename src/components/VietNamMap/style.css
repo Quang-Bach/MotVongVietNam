@@ -1,6 +1,6 @@
 .vietnam-map-container {
   height: 900px;
-  width: auto;
+  width: 631px;
   position: relative;
 }
 
@@ -26,7 +26,8 @@
 }
 
 @keyframes pulseLine {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.6;
     transform: scaleX(0.95);
   }
@@ -36,7 +37,7 @@
   }
 }
 
-/* --------- Player 1 --------- */
+
 .vietnam-map-container .player__1 {
   z-index: 10;
 }
@@ -67,7 +68,7 @@
   transform: scale(1.15);
 }
 
-/* --------- Player 2 --------- */
+
 .vietnam-map-container .player__2 {
   z-index: 5;
 }
