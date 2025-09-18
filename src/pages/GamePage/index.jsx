@@ -75,10 +75,8 @@ function GamePage() {
         <ProvinceBox turn={turn} player={player1} active={turn === 1} />
         <Dice dice={dice} onRollDice={onRollDice} />
         <ProvinceBox turn={turn} player={player2} active={turn === 2} />
-        <Link to="/">
-          <button className="replay-button">
-            <FontAwesomeIcon icon={faSquareXmark} />
-          </button>
+        <Link to="/" className="replay-button">
+          <FontAwesomeIcon icon={faSquareXmark} />
         </Link>
       </div>
       {winner !== undefined && (
