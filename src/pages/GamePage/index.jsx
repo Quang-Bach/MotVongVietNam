@@ -62,7 +62,7 @@ function GamePage() {
     setDice(diceResult);
     //B5: kiểm tra người chơi hiện tại có thắng không
 
-    if (nextProvince.id === "cuc-bac-viet-nam") {
+    if (nextProvince && nextProvince.id === "cuc-bac-viet-nam") {
       setWinner(turn); // Cập nhật ng chiến thắng
     }
     //B6: ghi lại lịch sử lượt chơi
