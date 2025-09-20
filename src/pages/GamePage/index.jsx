@@ -105,9 +105,7 @@ function GamePage() {
           <FontAwesomeIcon icon={faSquareXmark} />
         </Link>
       </div>
-      {winner !== undefined && (
-        <Winner wwinner={winner} onNewGame={onNewGame} />
-      )}
+      {winner !== undefined && <Winner winner={winner} onNewGame={onNewGame} />}
       <HistoryModal
         isOpen={openHistory}
         onClose={() => setOpenHistory(false)}

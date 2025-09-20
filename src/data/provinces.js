@@ -396,7 +396,7 @@ const PROVINCES_DATA = [
       { number: 3, id: "quang-ninh" },
       { number: 4, id: "hung-yen" },
       { number: 5, id: "hai-phong" },
-      { number: 6, id: "thai-nguyen" },
+    
     ],
     position: {
       x: 248,
@@ -428,7 +428,6 @@ const PROVINCES_DATA = [
       { number: 3, id: "tuyen-quang" },
       { number: 4, id: "thanh-hoa" },
       { number: 5, id: "son-la" },
-      { number: 6, id: "ninh-binh" },
     ],
     position: {
       x: 188,
@@ -505,7 +504,6 @@ const PROVINCES_DATA = [
       { number: 3, id: "lang-son" },
       { number: 4, id: "cao-bang" },
       { number: 5, id: "ha-noi" },
-      { number: 6, id: "tuyen-quang" },
     ],
     position: {
       x: 220,
