@@ -396,7 +396,6 @@ const PROVINCES_DATA = [
       { number: 3, id: "quang-ninh" },
       { number: 4, id: "hung-yen" },
       { number: 5, id: "hai-phong" },
-    
     ],
     position: {
       x: 248,
@@ -449,22 +448,7 @@ const PROVINCES_DATA = [
       y: 109,
     },
   },
-  {
-    id: "tuyen-quang",
-    name: "Tuyên Quang",
-    thumbnail: TuyenQuangImg,
-    dice: [
-      { number: 1, id: "phu-tho" },
-      { number: 2, id: "cao-bang" },
-      { number: 3, id: "thai-nguyen" },
-      { number: 4, id: "lao-cai" },
-      { number: 6, id: "cuc-bac-viet-nam" },
-    ],
-    position: {
-      x: 182,
-      y: 82,
-    },
-  },
+
   {
     id: "cao-bang",
     name: "Cao Bằng",
@@ -589,6 +573,28 @@ const PROVINCES_DATA = [
     thumbnail: CucBacImg,
     dice: [],
 
+    position: {
+      x: 182,
+      y: 82,
+    },
+  },
+  {
+    id: "tuyen-quang",
+    name: "Tuyên Quang",
+    thumbnail: TuyenQuangImg,
+    dice: [
+      { number: 1, id: "phu-tho" },
+      { number: 2, id: "cao-bang" },
+      { number: 3, id: "thai-nguyen" },
+      { number: 4, id: "lao-cai" },
+      { number: 5, id: "cuc-bac-viet-nam" },
+      // { number: 1, id: "cuc-bac-viet-nam" },
+      // { number: 2, id: "cuc-bac-viet-nam" },
+      // { number: 3, id: "cuc-bac-viet-nam" },
+      // { number: 4, id: "cuc-bac-viet-nam" },
+      // { number: 5, id: "cuc-bac-viet-nam" },
+      // { number: 6, id: "cuc-bac-viet-nam" },
+    ],
     position: {
       x: 182,
       y: 82,
