@@ -11,6 +11,7 @@ import Dice from "../../components/Dice";
 import HistoryModal from "../../components/HistoryModal";
 import PROVINCES_DATA from "../../data/provinces";
 import Winner from "../../components/Winner";
+import { toast } from "react-toastify";
 
 import "./style.css";
 
@@ -76,6 +77,8 @@ function GamePage() {
       historyRecord = `${historyRecord}, không di chuyển`;
     }
     setHistory([...history, historyRecord]);
+    //B7: hiển thị thông báo kết quả lượt chơi ra màn hình bằng toast thông báo
+    toast(historyRecord);
   };
 
   const onNewGame = () => {
