@@ -31,11 +31,13 @@ const HistoryModal = ({ isOpen, onClose, history }) => {
     >
       <h2 className="modal-title">Lịch sử lượt chơi</h2>
       <ul className="turn-list">
-        {history.map((item, index) => (
-          <li key={index} className="turn-item">
-            {item}
-          </li>
-        ))}
+        {history.lenght === 0 && <p>Chưa có lượt chơi nào!</p>}
+        {history.lenght > 0 &&
+          history.map((item, index) => (
+            <li key={index} className="turn-item">
+              {item}
+            </li>
+          ))}
       </ul>
       <button className="close-button" onClick={onClose}>
         Đóng
